@@ -1,0 +1,16 @@
+﻿@using ContadorBasquete.Models;
+@model LancarPontos
+<h1>Lancar Pontos</h1>
+<form asp-controller="Home" asp-action="LancarPontos">
+    <div>
+        <label>Data do jogo:</label>
+        <input asp-for="Date"/>
+    </div>
+    <div>
+        <label>Quantos pontos você fez:</label>
+        <input asp-for="Pontos" />
+    </div>
+    <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+
+</form>
+
